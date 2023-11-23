@@ -5,6 +5,7 @@ public class CountPrimes {
     public static Callable<Long> countingPrimesUsingJavaStreams ( long start, long stop ) {
         return () -> {
             return LongStream.rangeClosed(start, stop)
+                    .parallel()
                     .filter(Numbers::isPrime)  // Filter the stream to include only prime numbers
                     .count();
         };
