@@ -2,3 +2,4 @@
 
 1. Sequential (For-Schleife): 10^8, 197.714s
 2. Sequential (Java Streams): 10^8, 197.389s
+3. Parallel (Java Streams): 10^8, 30.346s
